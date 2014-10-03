@@ -475,8 +475,8 @@ class Contexts
 		}
 
 		foreach ($attrs as $attr => $value) {
-			if (isset(self::$attr)) {
-				self::$attr = $value;
+			if (isset(self::$$attr)) {
+				self::$$attr = $value;
 			}
 		}
 	}
